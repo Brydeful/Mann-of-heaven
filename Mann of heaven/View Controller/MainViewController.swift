@@ -13,12 +13,15 @@ class MainViewController: UITableViewController {
     
     var jsonDic = [[String:Any]]()
     
-    let sizeArray = ["S","M","L"]
+    let sizeArray = ["Маленькая","Средняя","Большая"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.prefersLargeTitles = true
+        navigationController?.navigationBar.tintColor = .white
+        navigationController?.navigationBar.barStyle = UIBarStyle.black
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addTapped))
+
     }
     
     func updateData(){
@@ -29,15 +32,17 @@ class MainViewController: UITableViewController {
                 case .success( _):
                     guard let jsonArray = responseJSON.result.value as? [[String: Any]] else { return }
                     self.jsonDic = jsonArray
+                    self.tableView.reloadData()
                 case .failure(let error):
                     print(error)
                 }
+                
             }
-            self.tableView.reloadData()
         }
     }
-    
     override func viewDidAppear(_ animated: Bool) {
+//        navigationController?.navigationBar.barTintColor = UIColor(red:0.18, green:0.31, blue:0.96, alpha:1.0)
+        navigationController?.navigationBar.barTintColor = UIColor(red:0.00, green:0.67, blue:1.00, alpha:1.0)
         updateData()
     }
     
@@ -57,8 +62,8 @@ class MainViewController: UITableViewController {
         let item = jsonDic[indexPath.row]
         let time = item["date"]! as! String
         let index = time.index(time.startIndex, offsetBy: 4)
-        cell.timeLabel.text = "Time: \(time[...index])"
-        cell.sizeLabel.text = "Size: \(sizeArray[(item["size"]! as! Int) - 1])"
+        cell.timeLabel.text = "Время кормления: \(time[...index])"
+        cell.sizeLabel.text = "Размер порции: \(sizeArray[(item["size"]! as! Int) - 1])"
         
     }
     
@@ -77,6 +82,10 @@ class MainViewController: UITableViewController {
             jsonDic.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .automatic)
         }
+    }
+    
+   override func tableView(_ tableView: UITableView, titleForDeleteConfirmationButtonForRowAt indexPath: IndexPath) -> String? {
+        return "Удалить"
     }
 }
 

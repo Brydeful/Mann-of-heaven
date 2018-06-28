@@ -50,8 +50,8 @@ class InterfaceController: WKInterfaceController {
                             let time = (jsonDic[i])["date"]! as! String
                             let size = (jsonDic[i])["size"]! as! Int
                             let index = time.index(time.startIndex, offsetBy: 4)
-                            row.timeLabel.setText("Time: \(time[...index])")
-                            row.sizeLabel.setText("Size: \(self.sizeArray[size - 1])")
+                            row.timeLabel.setText("Время: \(time[...index])")
+                            row.sizeLabel.setText("Размер: \(self.sizeArray[size - 1])")
                         }
                     }
                     return
