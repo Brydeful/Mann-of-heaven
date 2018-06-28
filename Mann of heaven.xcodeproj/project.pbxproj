@@ -1,0 +1,797 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8030353C20DFF89C00FC3D11 /* RowType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8030353B20DFF89C00FC3D11 /* RowType.swift */; };
+		803DB89820CA6F7000AD53A2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803DB89720CA6F7000AD53A2 /* MainViewController.swift */; };
+		80431CF920CA9B7500768ED4 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80431CF820CA9B7500768ED4 /* Post.swift */; };
+		808531E620CA6825009167B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808531E520CA6825009167B4 /* AppDelegate.swift */; };
+		808531EB20CA6825009167B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 808531E920CA6825009167B4 /* Main.storyboard */; };
+		808531ED20CA6827009167B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 808531EC20CA6827009167B4 /* Assets.xcassets */; };
+		808531F020CA6827009167B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 808531EE20CA6827009167B4 /* LaunchScreen.storyboard */; };
+		809016BE20E509DD00A8F8A9 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809016BD20E509DD00A8F8A9 /* Config.swift */; };
+		809016C020E50D9800A8F8A9 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809016BF20E50D9800A8F8A9 /* Config.swift */; };
+		80D0A11920D785A1007625C6 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D0A11820D785A1007625C6 /* AddViewController.swift */; };
+		80F0F6AE20DFE828007CAF8C /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80F0F6AC20DFE828007CAF8C /* Interface.storyboard */; };
+		80F0F6B020DFE82A007CAF8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80F0F6AF20DFE82A007CAF8C /* Assets.xcassets */; };
+		80F0F6B720DFE82A007CAF8C /* Mann of heaven Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 80F0F6B620DFE82A007CAF8C /* Mann of heaven Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		80F0F6BC20DFE82A007CAF8C /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F0F6BB20DFE82A007CAF8C /* InterfaceController.swift */; };
+		80F0F6BE20DFE82A007CAF8C /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F0F6BD20DFE82A007CAF8C /* ExtensionDelegate.swift */; };
+		80F0F6C020DFE82B007CAF8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80F0F6BF20DFE82B007CAF8C /* Assets.xcassets */; };
+		80F0F6C420DFE82B007CAF8C /* Mann of heaven Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 80F0F6AA20DFE828007CAF8C /* Mann of heaven Watch.app */; };
+		80F1F79A20CA8CCB00D24D01 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80F1F79920CA8CCB00D24D01 /* Alamofire.framework */; };
+		8D6469EAE3F734A3E2CAFFA7 /* Pods_Mann_of_heaven_Watch_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593A6C1A0FF0644D677D1963 /* Pods_Mann_of_heaven_Watch_Extension.framework */; };
+		910713ABA0E43AD93D431604 /* Pods_Mann_of_heaven.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00AC74D8A33F3E6640D15751 /* Pods_Mann_of_heaven.framework */; };
+		A8309FC2227638FD1F3686A4 /* Pods_Mann_of_heaven_Watch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E741E42CC4790DD61AE74D15 /* Pods_Mann_of_heaven_Watch.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		80F0F6B820DFE82A007CAF8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 808531DA20CA6825009167B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80F0F6B520DFE82A007CAF8C;
+			remoteInfo = "Mann of heaven Watch Extension";
+		};
+		80F0F6C220DFE82B007CAF8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 808531DA20CA6825009167B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80F0F6A920DFE828007CAF8C;
+			remoteInfo = "Mann of heaven Watch";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		80F0F6C820DFE82B007CAF8C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				80F0F6B720DFE82A007CAF8C /* Mann of heaven Watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80F0F6CC20DFE82B007CAF8C /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				80F0F6C420DFE82B007CAF8C /* Mann of heaven Watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		00AC74D8A33F3E6640D15751 /* Pods_Mann_of_heaven.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mann_of_heaven.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		593A6C1A0FF0644D677D1963 /* Pods_Mann_of_heaven_Watch_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mann_of_heaven_Watch_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		719491713F57A271FC638AB0 /* Pods-Mann of heaven Watch Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mann of heaven Watch Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mann of heaven Watch Extension/Pods-Mann of heaven Watch Extension.release.xcconfig"; sourceTree = "<group>"; };
+		7E216E44490D11F21766DDB5 /* Pods-Mann of heaven Watch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mann of heaven Watch.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mann of heaven Watch/Pods-Mann of heaven Watch.release.xcconfig"; sourceTree = "<group>"; };
+		802CAE9A20D7FA9000D2415F /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8030353B20DFF89C00FC3D11 /* RowType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowType.swift; sourceTree = "<group>"; };
+		803DB89520CA6E3C00AD53A2 /* SwiftSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		803DB89720CA6F7000AD53A2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		80431CF820CA9B7500768ED4 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		808531E220CA6825009167B4 /* Mann of heaven.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mann of heaven.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		808531E520CA6825009167B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		808531EA20CA6825009167B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		808531EC20CA6827009167B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		808531EF20CA6827009167B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		808531F120CA6827009167B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		809016BD20E509DD00A8F8A9 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		809016BF20E50D9800A8F8A9 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		80D0A11820D785A1007625C6 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		80F0F6AA20DFE828007CAF8C /* Mann of heaven Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mann of heaven Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		80F0F6AD20DFE828007CAF8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		80F0F6AF20DFE82A007CAF8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		80F0F6B120DFE82A007CAF8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80F0F6B620DFE82A007CAF8C /* Mann of heaven Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Mann of heaven Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		80F0F6BB20DFE82A007CAF8C /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		80F0F6BD20DFE82A007CAF8C /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		80F0F6BF20DFE82B007CAF8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		80F0F6C120DFE82B007CAF8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80F1F79920CA8CCB00D24D01 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		81E020A6CBBF4343CB70514D /* Pods-Mann of heaven Watch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mann of heaven Watch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mann of heaven Watch/Pods-Mann of heaven Watch.debug.xcconfig"; sourceTree = "<group>"; };
+		C89BE1E21529CD19D41329BF /* Pods-Mann of heaven.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mann of heaven.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mann of heaven/Pods-Mann of heaven.release.xcconfig"; sourceTree = "<group>"; };
+		E741E42CC4790DD61AE74D15 /* Pods_Mann_of_heaven_Watch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mann_of_heaven_Watch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E89A7140429D2870C4E04A3F /* Pods-Mann of heaven Watch Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mann of heaven Watch Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mann of heaven Watch Extension/Pods-Mann of heaven Watch Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		FEAB780732853D983A279210 /* Pods-Mann of heaven.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mann of heaven.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mann of heaven/Pods-Mann of heaven.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7D93AAAC514BE54FF2EEACD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8309FC2227638FD1F3686A4 /* Pods_Mann_of_heaven_Watch.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		808531DF20CA6825009167B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80F1F79A20CA8CCB00D24D01 /* Alamofire.framework in Frameworks */,
+				910713ABA0E43AD93D431604 /* Pods_Mann_of_heaven.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80F0F6B320DFE82A007CAF8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D6469EAE3F734A3E2CAFFA7 /* Pods_Mann_of_heaven_Watch_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		69D4954A744D16A9365BEDEF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FEAB780732853D983A279210 /* Pods-Mann of heaven.debug.xcconfig */,
+				C89BE1E21529CD19D41329BF /* Pods-Mann of heaven.release.xcconfig */,
+				81E020A6CBBF4343CB70514D /* Pods-Mann of heaven Watch.debug.xcconfig */,
+				7E216E44490D11F21766DDB5 /* Pods-Mann of heaven Watch.release.xcconfig */,
+				E89A7140429D2870C4E04A3F /* Pods-Mann of heaven Watch Extension.debug.xcconfig */,
+				719491713F57A271FC638AB0 /* Pods-Mann of heaven Watch Extension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		80431CF720CA9B6700768ED4 /* Rest */ = {
+			isa = PBXGroup;
+			children = (
+				80431CF820CA9B7500768ED4 /* Post.swift */,
+			);
+			path = Rest;
+			sourceTree = "<group>";
+		};
+		808531D920CA6825009167B4 = {
+			isa = PBXGroup;
+			children = (
+				808531E420CA6825009167B4 /* Mann of heaven */,
+				80F0F6AB20DFE828007CAF8C /* Mann of heaven Watch */,
+				80F0F6BA20DFE82A007CAF8C /* Mann of heaven Watch Extension */,
+				808531E320CA6825009167B4 /* Products */,
+				69D4954A744D16A9365BEDEF /* Pods */,
+				8F20ECD25F19AAC3B02816F3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		808531E320CA6825009167B4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				808531E220CA6825009167B4 /* Mann of heaven.app */,
+				80F0F6AA20DFE828007CAF8C /* Mann of heaven Watch.app */,
+				80F0F6B620DFE82A007CAF8C /* Mann of heaven Watch Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		808531E420CA6825009167B4 /* Mann of heaven */ = {
+			isa = PBXGroup;
+			children = (
+				80431CF720CA9B6700768ED4 /* Rest */,
+				808531F720CA6937009167B4 /* View Controller */,
+				808531E520CA6825009167B4 /* AppDelegate.swift */,
+				808531E920CA6825009167B4 /* Main.storyboard */,
+				808531EC20CA6827009167B4 /* Assets.xcassets */,
+				808531EE20CA6827009167B4 /* LaunchScreen.storyboard */,
+				808531F120CA6827009167B4 /* Info.plist */,
+				809016BD20E509DD00A8F8A9 /* Config.swift */,
+			);
+			path = "Mann of heaven";
+			sourceTree = "<group>";
+		};
+		808531F720CA6937009167B4 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				803DB89720CA6F7000AD53A2 /* MainViewController.swift */,
+				80D0A11820D785A1007625C6 /* AddViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		80F0F6AB20DFE828007CAF8C /* Mann of heaven Watch */ = {
+			isa = PBXGroup;
+			children = (
+				80F0F6AC20DFE828007CAF8C /* Interface.storyboard */,
+				80F0F6AF20DFE82A007CAF8C /* Assets.xcassets */,
+				80F0F6B120DFE82A007CAF8C /* Info.plist */,
+			);
+			path = "Mann of heaven Watch";
+			sourceTree = "<group>";
+		};
+		80F0F6BA20DFE82A007CAF8C /* Mann of heaven Watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				80F0F6BB20DFE82A007CAF8C /* InterfaceController.swift */,
+				80F0F6BD20DFE82A007CAF8C /* ExtensionDelegate.swift */,
+				80F0F6BF20DFE82B007CAF8C /* Assets.xcassets */,
+				80F0F6C120DFE82B007CAF8C /* Info.plist */,
+				8030353B20DFF89C00FC3D11 /* RowType.swift */,
+				809016BF20E50D9800A8F8A9 /* Config.swift */,
+			);
+			path = "Mann of heaven Watch Extension";
+			sourceTree = "<group>";
+		};
+		8F20ECD25F19AAC3B02816F3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				802CAE9A20D7FA9000D2415F /* SwiftyJSON.framework */,
+				80F1F79920CA8CCB00D24D01 /* Alamofire.framework */,
+				803DB89520CA6E3C00AD53A2 /* SwiftSocket.framework */,
+				00AC74D8A33F3E6640D15751 /* Pods_Mann_of_heaven.framework */,
+				E741E42CC4790DD61AE74D15 /* Pods_Mann_of_heaven_Watch.framework */,
+				593A6C1A0FF0644D677D1963 /* Pods_Mann_of_heaven_Watch_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		808531E120CA6825009167B4 /* Mann of heaven */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 808531F420CA6827009167B4 /* Build configuration list for PBXNativeTarget "Mann of heaven" */;
+			buildPhases = (
+				3171995EECBA9A62F3DB58B4 /* [CP] Check Pods Manifest.lock */,
+				808531DE20CA6825009167B4 /* Sources */,
+				808531DF20CA6825009167B4 /* Frameworks */,
+				808531E020CA6825009167B4 /* Resources */,
+				22E90EDB6ADFD01CA5F1CE08 /* [CP] Embed Pods Frameworks */,
+				80F0F6CC20DFE82B007CAF8C /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				80F0F6C320DFE82B007CAF8C /* PBXTargetDependency */,
+			);
+			name = "Mann of heaven";
+			productName = "Mann of heaven";
+			productReference = 808531E220CA6825009167B4 /* Mann of heaven.app */;
+			productType = "com.apple.product-type.application";
+		};
+		80F0F6A920DFE828007CAF8C /* Mann of heaven Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80F0F6C920DFE82B007CAF8C /* Build configuration list for PBXNativeTarget "Mann of heaven Watch" */;
+			buildPhases = (
+				D6C43F8486BB31BA80E94BC7 /* [CP] Check Pods Manifest.lock */,
+				80F0F6A820DFE828007CAF8C /* Resources */,
+				80F0F6C820DFE82B007CAF8C /* Embed App Extensions */,
+				7D93AAAC514BE54FF2EEACD6 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				80F0F6B920DFE82A007CAF8C /* PBXTargetDependency */,
+			);
+			name = "Mann of heaven Watch";
+			productName = "Mann of heaven Watch";
+			productReference = 80F0F6AA20DFE828007CAF8C /* Mann of heaven Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		80F0F6B520DFE82A007CAF8C /* Mann of heaven Watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80F0F6C520DFE82B007CAF8C /* Build configuration list for PBXNativeTarget "Mann of heaven Watch Extension" */;
+			buildPhases = (
+				D618E8BCA2F6846520677F14 /* [CP] Check Pods Manifest.lock */,
+				80F0F6B220DFE82A007CAF8C /* Sources */,
+				80F0F6B320DFE82A007CAF8C /* Frameworks */,
+				80F0F6B420DFE82A007CAF8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mann of heaven Watch Extension";
+			productName = "Mann of heaven Watch Extension";
+			productReference = 80F0F6B620DFE82A007CAF8C /* Mann of heaven Watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		808531DA20CA6825009167B4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Вячеслав";
+				TargetAttributes = {
+					808531E120CA6825009167B4 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					80F0F6A920DFE828007CAF8C = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					80F0F6B520DFE82A007CAF8C = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 808531DD20CA6825009167B4 /* Build configuration list for PBXProject "Mann of heaven" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 808531D920CA6825009167B4;
+			productRefGroup = 808531E320CA6825009167B4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				808531E120CA6825009167B4 /* Mann of heaven */,
+				80F0F6A920DFE828007CAF8C /* Mann of heaven Watch */,
+				80F0F6B520DFE82A007CAF8C /* Mann of heaven Watch Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		808531E020CA6825009167B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				808531F020CA6827009167B4 /* LaunchScreen.storyboard in Resources */,
+				808531ED20CA6827009167B4 /* Assets.xcassets in Resources */,
+				808531EB20CA6825009167B4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80F0F6A820DFE828007CAF8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80F0F6B020DFE82A007CAF8C /* Assets.xcassets in Resources */,
+				80F0F6AE20DFE828007CAF8C /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80F0F6B420DFE82A007CAF8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80F0F6C020DFE82B007CAF8C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		22E90EDB6ADFD01CA5F1CE08 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Mann of heaven/Pods-Mann of heaven-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mann of heaven/Pods-Mann of heaven-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3171995EECBA9A62F3DB58B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mann of heaven-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D618E8BCA2F6846520677F14 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mann of heaven Watch Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6C43F8486BB31BA80E94BC7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mann of heaven Watch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		808531DE20CA6825009167B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				808531E620CA6825009167B4 /* AppDelegate.swift in Sources */,
+				80431CF920CA9B7500768ED4 /* Post.swift in Sources */,
+				809016BE20E509DD00A8F8A9 /* Config.swift in Sources */,
+				80D0A11920D785A1007625C6 /* AddViewController.swift in Sources */,
+				803DB89820CA6F7000AD53A2 /* MainViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80F0F6B220DFE82A007CAF8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80F0F6BE20DFE82A007CAF8C /* ExtensionDelegate.swift in Sources */,
+				809016C020E50D9800A8F8A9 /* Config.swift in Sources */,
+				80F0F6BC20DFE82A007CAF8C /* InterfaceController.swift in Sources */,
+				8030353C20DFF89C00FC3D11 /* RowType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		80F0F6B920DFE82A007CAF8C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 80F0F6B520DFE82A007CAF8C /* Mann of heaven Watch Extension */;
+			targetProxy = 80F0F6B820DFE82A007CAF8C /* PBXContainerItemProxy */;
+		};
+		80F0F6C320DFE82B007CAF8C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 80F0F6A920DFE828007CAF8C /* Mann of heaven Watch */;
+			targetProxy = 80F0F6C220DFE82B007CAF8C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		808531E920CA6825009167B4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				808531EA20CA6825009167B4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		808531EE20CA6827009167B4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				808531EF20CA6827009167B4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		80F0F6AC20DFE828007CAF8C /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80F0F6AD20DFE828007CAF8C /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		808531F220CA6827009167B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		808531F320CA6827009167B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		808531F520CA6827009167B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEAB780732853D983A279210 /* Pods-Mann of heaven.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AUZF4B9TJ6;
+				INFOPLIST_FILE = "Mann of heaven/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "vicheslav.Mann-of-heaven";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		808531F620CA6827009167B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C89BE1E21529CD19D41329BF /* Pods-Mann of heaven.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AUZF4B9TJ6;
+				INFOPLIST_FILE = "Mann of heaven/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "vicheslav.Mann-of-heaven";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		80F0F6C620DFE82B007CAF8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E89A7140429D2870C4E04A3F /* Pods-Mann of heaven Watch Extension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AUZF4B9TJ6;
+				INFOPLIST_FILE = "Mann of heaven Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "vicheslav.Mann-of-heaven.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		80F0F6C720DFE82B007CAF8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 719491713F57A271FC638AB0 /* Pods-Mann of heaven Watch Extension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AUZF4B9TJ6;
+				INFOPLIST_FILE = "Mann of heaven Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "vicheslav.Mann-of-heaven.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+		80F0F6CA20DFE82B007CAF8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81E020A6CBBF4343CB70514D /* Pods-Mann of heaven Watch.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AUZF4B9TJ6;
+				IBSC_MODULE = Mann_of_heaven_Watch_Extension;
+				INFOPLIST_FILE = "Mann of heaven Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "vicheslav.Mann-of-heaven.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		80F0F6CB20DFE82B007CAF8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E216E44490D11F21766DDB5 /* Pods-Mann of heaven Watch.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AUZF4B9TJ6;
+				IBSC_MODULE = Mann_of_heaven_Watch_Extension;
+				INFOPLIST_FILE = "Mann of heaven Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "vicheslav.Mann-of-heaven.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		808531DD20CA6825009167B4 /* Build configuration list for PBXProject "Mann of heaven" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				808531F220CA6827009167B4 /* Debug */,
+				808531F320CA6827009167B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		808531F420CA6827009167B4 /* Build configuration list for PBXNativeTarget "Mann of heaven" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				808531F520CA6827009167B4 /* Debug */,
+				808531F620CA6827009167B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80F0F6C520DFE82B007CAF8C /* Build configuration list for PBXNativeTarget "Mann of heaven Watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80F0F6C620DFE82B007CAF8C /* Debug */,
+				80F0F6C720DFE82B007CAF8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80F0F6C920DFE82B007CAF8C /* Build configuration list for PBXNativeTarget "Mann of heaven Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80F0F6CA20DFE82B007CAF8C /* Debug */,
+				80F0F6CB20DFE82B007CAF8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 808531DA20CA6825009167B4 /* Project object */;
+}
