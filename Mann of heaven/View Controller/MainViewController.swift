@@ -12,7 +12,12 @@ import Alamofire
 class MainViewController: UITableViewController {
     
     var jsonDic = [[String:Any]]()
-    
+    lazy var refresher : UIRefreshControl = {
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(refreshData(_:)), for: .valueChanged)
+        refreshControl.tintColor = .white
+        return refreshControl
+    }()
     let sizeArray = ["Маленькая","Средняя","Большая"]
     
     override func viewDidLoad() {
@@ -21,9 +26,13 @@ class MainViewController: UITableViewController {
         navigationController?.navigationBar.tintColor = .white
         navigationController?.navigationBar.barStyle = UIBarStyle.black
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addTapped))
-
+        
+        tableView.refreshControl = refresher
     }
-    
+    @objc private func refreshData(_ sender: Any) {
+        updateData()
+        self.refresher.endRefreshing()
+    }
     func updateData(){
         DispatchQueue.main.async{
             request("\(ip):5000/mann/api/v1/dinner").responseJSON { responseJSON in
@@ -41,7 +50,7 @@ class MainViewController: UITableViewController {
         }
     }
     override func viewDidAppear(_ animated: Bool) {
-//        navigationController?.navigationBar.barTintColor = UIColor(red:0.18, green:0.31, blue:0.96, alpha:1.0)
+        //        navigationController?.navigationBar.barTintColor = UIColor(red:0.18, green:0.31, blue:0.96, alpha:1.0)
         navigationController?.navigationBar.barTintColor = UIColor(red:0.00, green:0.67, blue:1.00, alpha:1.0)
         updateData()
     }
@@ -84,7 +93,7 @@ class MainViewController: UITableViewController {
         }
     }
     
-   override func tableView(_ tableView: UITableView, titleForDeleteConfirmationButtonForRowAt indexPath: IndexPath) -> String? {
+    override func tableView(_ tableView: UITableView, titleForDeleteConfirmationButtonForRowAt indexPath: IndexPath) -> String? {
         return "Удалить"
     }
 }
