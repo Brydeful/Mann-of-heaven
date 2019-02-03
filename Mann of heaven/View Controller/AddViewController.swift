@@ -28,7 +28,6 @@ class AddViewController: UIViewController,UIPickerViewDelegate, UIPickerViewData
         sizePicker.delegate = self
         sizePicker.dataSource = self
         navigationItem.largeTitleDisplayMode = .never
-        view.tintColor = UIColor(red:0.18, green:0.31, blue:0.96, alpha:1.0)
     }
     
     @IBAction func addButton(_ sender: Any) {

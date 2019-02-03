@@ -11,7 +11,8 @@ import UIKit
 import Alamofire
 class MainViewController: UITableViewController {
     
-    var jsonDic = [[String:Any]]()
+    var jsonDictionary = [[String:Any]]()
+
     lazy var refresher : UIRefreshControl = {
         let refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: #selector(refreshData(_:)), for: .valueChanged)
@@ -40,7 +41,7 @@ class MainViewController: UITableViewController {
                 switch responseJSON.result {
                 case .success( _):
                     guard let jsonArray = responseJSON.result.value as? [[String: Any]] else { return }
-                    self.jsonDic = jsonArray
+                    self.jsonDictionary = jsonArray
                     self.tableView.reloadData()
                 case .failure(let error):
                     print(error)
@@ -50,8 +51,8 @@ class MainViewController: UITableViewController {
         }
     }
     override func viewDidAppear(_ animated: Bool) {
-        //        navigationController?.navigationBar.barTintColor = UIColor(red:0.18, green:0.31, blue:0.96, alpha:1.0)
-        navigationController?.navigationBar.barTintColor = UIColor(red:0.00, green:0.67, blue:1.00, alpha:1.0)
+
+        navigationController?.navigationBar.barTintColor = UIColor(red:0.20, green:0.46, blue:0.89, alpha:1.0)
         updateData()
     }
     
@@ -64,11 +65,11 @@ class MainViewController: UITableViewController {
     // MARK: - Table view data source
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return jsonDic.count
+        return jsonDictionary.count
     }
     
     private func configureCell(cell: ItemCell, for indexPath: IndexPath) {
-        let item = jsonDic[indexPath.row]
+        let item = jsonDictionary[indexPath.row]
         let time = item["date"]! as! String
         let index = time.index(time.startIndex, offsetBy: 4)
         cell.timeLabel.text = "Время кормления: \(time[...index])"
@@ -84,11 +85,11 @@ class MainViewController: UITableViewController {
     
     // MARK: - Editing the table view
     
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            let firstTodoEndpoint: String = "\(ip):5000/mann/api/v1/dinner/\(((self.jsonDic[indexPath.row])["id"])!)"
+            let firstTodoEndpoint: String = "\(ip):5000/mann/api/v1/dinner/\(((self.jsonDictionary[indexPath.row])["id"])!)"
             request(firstTodoEndpoint, method: .delete).responseJSON
-            jsonDic.remove(at: indexPath.row)
+            jsonDictionary.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .automatic)
         }
     }
