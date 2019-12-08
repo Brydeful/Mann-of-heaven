@@ -88,7 +88,7 @@ class MainViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             let firstTodoEndpoint: String = "\(ip):5000/mann/api/v1/dinner/\(((self.jsonDictionary[indexPath.row])["id"])!)"
-            request(firstTodoEndpoint, method: .delete).responseJSON
+            request(firstTodoEndpoint, method: .delete)
             jsonDictionary.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .automatic)
         }
