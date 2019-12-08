@@ -26,8 +26,7 @@ class MainViewController: UITableViewController {
         setupNavigationItem()
     }
     
-    fileprivate func setupNavigationItem() {
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addTapped))
+    private func setupNavigationItem() {
         tableView.refreshControl = refresher
     }
     
@@ -36,20 +35,17 @@ class MainViewController: UITableViewController {
         self.refresher.endRefreshing()
     }
     
-    func updateData(){
+    private func updateData(){
         networkService.fetchDiner { (diner) in
             guard let dinersFetch = diner else { return }
             self.diners = dinersFetch
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
         }
     }
     override func viewDidAppear(_ animated: Bool) {
         updateData()
-    }
-    
-    // Segue - AddViewController
-    
-    @objc func addTapped(){
-        performSegue(withIdentifier: "addSegue", sender: nil)
     }
     
     // MARK: - Table view data source

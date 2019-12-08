@@ -12,7 +12,6 @@ import Alamofire
 class NetworkService{
     
     func fetchDiner(completion: @escaping(([Diner]?) -> Void)){
-        
         AF.request("\(ip):5000/mann/api/v1/dinner").responseData { response in
             if let error = response.error {
                 print(error)
@@ -22,8 +21,8 @@ class NetworkService{
             do {
                 let objects = [try JSONDecoder().decode(Diner.self, from: data)]
                 completion(objects)
-            }catch let jsonError{
-                print(jsonError)
+            }catch let error{
+                print(error)
             }
             
         }
@@ -41,13 +40,14 @@ class NetworkService{
             }
         }
     }
+    
     func addDiner(parameters: [String:String]){
         AF.request("\(ip):5000/mann/api/v1/dinner", method: .post, parameters: parameters, encoding:  JSONEncoding.default).responseJSON { (response) in
-                switch response.result {
-                case let .success(value):
-                    print(value)
-                case let .failure(error):
-                    print(error)
+            switch response.result {
+            case let .success(value):
+                print(value)
+            case let .failure(error):
+                print(error)
             }
         }
     }

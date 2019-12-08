@@ -59,10 +59,13 @@
                             <outlet property="delegate" destination="U1V-7R-5w6" id="nmZ-GE-bdV"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Мои кормежки" id="GLz-fR-3JJ"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="addSegue" id="9e1-7v-ofF"/>
-                    </connections>
+                    <navigationItem key="navigationItem" title="Мои кормежки" largeTitleDisplayMode="always" id="GLz-fR-3JJ">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Rxe-qu-YZx">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="show" id="8i3-D8-lFk"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jVG-yR-Tlh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -92,32 +95,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="3vj-rq-wvG">
-                                <rect key="frame" x="0.0" y="210" width="414" height="205"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="205" id="Lmx-qG-i07"/>
-                                </constraints>
-                            </datePicker>
-                            <pickerView contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="wwG-V6-IRe">
-                                <rect key="frame" x="0.0" y="472" width="414" height="216"/>
-                            </pickerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Размер порции" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ldb-kF-Uvc">
-                                <rect key="frame" x="16" y="423" width="378" height="41"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Время кормления" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TO6-nk-TYx">
-                                <rect key="frame" x="16" y="162" width="378" height="41"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2px-Xf-TDs">
+                                <rect key="frame" x="47" y="181" width="320" height="534"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="t1x-IF-q7e">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="262"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Время кормления" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TO6-nk-TYx">
+                                                <rect key="frame" x="22" y="0.0" width="276.5" height="41"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="3vj-rq-wvG">
+                                                <rect key="frame" x="0.0" y="46" width="320" height="216"/>
+                                            </datePicker>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Yus-7A-jJO">
+                                        <rect key="frame" x="0.0" y="272" width="320" height="262"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Размер порции" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ldb-kF-Uvc">
+                                                <rect key="frame" x="41.5" y="0.0" width="237.5" height="41"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <pickerView contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="wwG-V6-IRe">
+                                                <rect key="frame" x="0.0" y="46" width="320" height="216"/>
+                                            </pickerView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VCI-k2-Ccx">
-                                <rect key="frame" x="106" y="826" width="198" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="Nta-na-swj"/>
-                                </constraints>
+                                <rect key="frame" x="170.5" y="820" width="73" height="32"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="Добавить">
                                     <color key="titleColor" red="0.20392156862745098" green="0.45882352941176469" blue="0.8901960784313725" alpha="1" colorSpace="calibratedRGB"/>
@@ -127,23 +139,12 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="3vj-rq-wvG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="06v-ST-IOQ"/>
-                            <constraint firstItem="TO6-nk-TYx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="6vQ-zT-deC"/>
-                            <constraint firstItem="TO6-nk-TYx" firstAttribute="leading" secondItem="Ldb-kF-Uvc" secondAttribute="leading" id="9Xv-M0-lab"/>
-                            <constraint firstItem="3vj-rq-wvG" firstAttribute="leading" secondItem="wwG-V6-IRe" secondAttribute="leading" id="Bd5-FP-QZf"/>
-                            <constraint firstItem="3vj-rq-wvG" firstAttribute="top" secondItem="TO6-nk-TYx" secondAttribute="bottom" constant="7" id="CJZ-6O-ggX"/>
-                            <constraint firstItem="TO6-nk-TYx" firstAttribute="trailing" secondItem="Ldb-kF-Uvc" secondAttribute="trailing" id="Chc-fu-2iW"/>
-                            <constraint firstItem="VCI-k2-Ccx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="106" id="ICN-O7-lie"/>
-                            <constraint firstItem="TO6-nk-TYx" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="MId-eo-h1J"/>
-                            <constraint firstItem="TO6-nk-TYx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="22" id="XD0-DR-kiE"/>
-                            <constraint firstItem="Ldb-kF-Uvc" firstAttribute="top" secondItem="3vj-rq-wvG" secondAttribute="bottom" constant="8" symbolic="YES" id="c6M-J0-zkg"/>
-                            <constraint firstItem="wwG-V6-IRe" firstAttribute="top" secondItem="Ldb-kF-Uvc" secondAttribute="bottom" constant="8" symbolic="YES" id="cxq-zj-j8b"/>
-                            <constraint firstItem="wwG-V6-IRe" firstAttribute="centerX" secondItem="VCI-k2-Ccx" secondAttribute="centerX" constant="2" id="pQT-bd-LKb"/>
-                            <constraint firstAttribute="bottom" secondItem="VCI-k2-Ccx" secondAttribute="bottom" constant="35" id="uup-GZ-ZZ0"/>
-                            <constraint firstAttribute="trailing" secondItem="3vj-rq-wvG" secondAttribute="trailing" id="x8U-fi-B0R"/>
-                            <constraint firstItem="3vj-rq-wvG" firstAttribute="trailing" secondItem="wwG-V6-IRe" secondAttribute="trailing" id="z0Y-5H-2uh"/>
+                            <constraint firstItem="2px-Xf-TDs" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="BAU-89-Dwm"/>
+                            <constraint firstItem="2px-Xf-TDs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jvr-9y-muR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VCI-k2-Ccx" secondAttribute="bottom" constant="10" id="KsP-pJ-TFc"/>
+                            <constraint firstItem="VCI-k2-Ccx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mxl-XX-AzZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
