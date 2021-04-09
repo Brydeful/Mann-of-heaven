@@ -19,7 +19,7 @@ struct Diner: Codable {
         case time = "date"
     }
     
-    var size: String{
+    var size: String {
         let sizeArray = ["Маленькая","Средняя","Большая"]
         return sizeArray[sizeIndex]
     }
